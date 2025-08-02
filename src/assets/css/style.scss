@@ -1,0 +1,74 @@
+$primary-color: #fe538d;
+$secondary-color: #FFB703;
+$text-color: #000;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    font-family: "Rubik", sans-serif;
+}
+
+header{
+    .logo{
+        text-transform: uppercase;
+        span{
+            color: $primary-color;
+        }
+    }
+    .nav-link{
+        margin-left: 20px;
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.2rem;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+
+.section-1{
+    .hero{
+       background-image: url('../images/hero.jpg');
+       min-height: 800px;
+        .hero-content{
+            text-align: center;
+            h1{
+                font-size: 4.5em;
+            }
+            span{
+                color: $secondary-color;
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+            p{
+                    font-size: 1.2em;
+            }
+        }
+    }
+}
+
+.btn-primary{
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    &:hover{
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+    }
+}
+.btn-secondary {
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
