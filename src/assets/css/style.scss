@@ -32,8 +32,10 @@ header{
     .hero{
        background-image: url('../images/hero.jpg');
        min-height: 800px;
+    //    background-color: #000;
         .hero-content{
             text-align: center;
+            color: white;
             h1{
                 font-size: 4.5em;
             }
@@ -71,5 +73,90 @@ header{
     &:hover {
         background-color: $primary-color;
         border-color: $primary-color;
+    }
+}
+
+.about-us{
+   img{border-radius: 40px;} 
+    span{
+        color: $primary-color;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 1.2em;
+    }   
+}
+
+.services{
+    span{
+        color: $primary-color;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 3em;
+    }
+    p{
+        font-size: 1.2em;
+    } 
+
+    .item{
+         position: relative;
+         overflow: hidden;
+         margin-bottom: 20px;
+            &:hover .service-body{
+                transform: translateY(0);
+            }
+        .service-image{
+            position: relative;
+            overflow: hidden;
+                img{
+                    width: 100%;
+                    border-radius: 40px;
+                }
+            }
+       
+        .service-body{
+                color: #fff;
+                position: absolute;
+                left: 30px;
+                right: 30px;
+                bottom: 30px;
+                transform: translateY(80%);
+                transition: all .4s ease-in-out;
+        }
+               
+    }
+}
+
+.why-choose-us{
+    span{
+        color: $primary-color;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 3em;
+    }
+    p{
+        font-size: 1.2em;
+    } 
+    .section-header{
+        text-align: center;
+    }
+    .card{
+         border-radius: 40px;
+         margin-bottom: 20px;
+         
     }
 }
