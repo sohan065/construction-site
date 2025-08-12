@@ -182,6 +182,119 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                {/* our projects */ }
+                <div className="our-projects bg-light">
+                    <div className="container py-5">
+                        <div className="section-header">
+                            <span>our projects</span>
+                            <h2>Explore our recent projects</h2>
+                            <p>We take pride in our diverse portfolio, showcasing our expertise across various sectors and project types.</p>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-3">
+                                <div className="item">
+                                    <div className="service-image">
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcset="" />
+                                    </div>
+                                    <div className="service-body">
+                                        <div className="service-title">
+                                            <h3>Goa Project 2025</h3>
+                                        </div>
+                                        <div className="service-content">
+                                            <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
+                                        </div>
+                                        <a href="" className='btn btn-primary'>Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-3">
+                                <div className="item">
+                                    <div className="service-image">
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcset="" />
+                                    </div>
+                                    <div className="service-body">
+                                        <div className="service-title">
+                                            <h3>Goa Project 2025</h3>
+                                        </div>
+                                        <div className="service-content">
+                                            <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
+                                        </div>
+                                        <a href="" className='btn btn-primary'>Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-3">
+                                <div className="item">
+                                    <div className="service-image">
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcset="" />
+                                    </div>
+                                    <div className="service-body">
+                                        <div className="service-title">
+                                            <h3>Goa Project 2025</h3>
+                                        </div>
+                                        <div className="service-content">
+                                            <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
+                                        </div>
+                                        <a href="" className='btn btn-primary'>Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-3">
+                                <div className="item">
+                                    <div className="service-image">
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcset="" />
+                                    </div>
+                                    <div className="service-body">
+                                        <div className="service-title">
+                                            <h3>Goa Project 2025</h3>
+                                        </div>
+                                        <div className="service-content">
+                                            <p>Specialty construction is a niche sector within the construction industry that focuses on projects requiring specialized skills, materials, and techniques.</p>
+                                        </div>
+                                        <a href="" className='btn btn-primary'>Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                {/* testimonials */ }
+                <div className="testimonials">
+                    <div className="container py-5">
+                        <div className="section-header">
+                            <span>Testimonials</span>
+                            <h2>What people are saying about us</h2>
+                            <p>We take pride in our diverse portfolio, showcasing our expertise across various sectors and project types.</p>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="card shadow">
+                                    <div class="rating">
+                                        rating
+                                    </div>
+                                    <div className="card-body">
+                                        <p className='card-text'>“Urbanedge Construction exceeded our expectations with their professionalism and attention to detail. Our project was completed on time and within budget, and the quality of work is outstanding.”</p>
+                                    </div>
+                                    <hr />
+                                    <div className="d-flex align-items-center justify-content-center p-3">
+                                        <div className="img">
+                                            <img src="https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942924.jpg" alt="" srcset="" />
+                                        </div>
+                                        <div className="ps-3">
+                                            <div className="name">Shivani</div>
+                                            <p>Project Manager, ABC Corp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
             </main>
         </>
