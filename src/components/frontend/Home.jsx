@@ -7,6 +7,9 @@ import Construction2 from '../../assets/images/construction2.jpg';
 import Construction3 from '../../assets/images/construction3.jpg';
 import Construction4 from '../../assets/images/construction4.jpg';
 import Construction5 from '../../assets/images/construction5.jpg';
+import Icon1 from '../../assets/images/icon-1.svg';
+import Icon2 from '../../assets/images/icon-2.svg';
+import Icon3 from '../../assets/images/icon-3.svg';
 const Home = () => {
     return (
         <>
@@ -139,10 +142,11 @@ const Home = () => {
                                 decades of experience, innovation, and flexibility to consistently deliver excellence.</p>
                         </div>
                         <div className="row pt-5">
+
                             <div className="col-md-4">
-                                <div className="card p-4">
+                                <div className="card shadow p-4">
                                     <div className="card-icon">
-                                        <img src="" alt="" srcset="" />
+                                        <img src={ Icon1 } alt="" srcset="" />
                                     </div>
                                     <div className="card-title">
                                         <h3>Expertise</h3>
@@ -150,9 +154,35 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="col-md-4">
+                                <div className="card shadow p-4">
+                                    <div className="card-icon">
+                                        <img src={ Icon2 } alt="" srcset="" />
+                                    </div>
+                                    <div className="card-title">
+                                        <h3>Cutting-Edge Solutions</h3>
+                                        <p>Small actions create big impacts. It all begins and ends with each employee committing to safer work practices daily, ensuring they return home safely.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4">
+                                <div className="card shadow p-4">
+                                    <div className="card-icon">
+                                        <img src={ Icon3 } alt="" srcset="" />
+                                    </div>
+                                    <div className="card-title">
+                                        <h3>Cutting-Edge Solutions</h3>
+                                        <p>Small actions create big impacts. It all begins and ends with each employee committing to safer work practices daily, ensuring they return home safely.</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
             </main>
         </>
     )
