@@ -10,6 +10,12 @@ import Construction5 from '../../assets/images/construction5.jpg';
 import Icon1 from '../../assets/images/icon-1.svg';
 import Icon2 from '../../assets/images/icon-2.svg';
 import Icon3 from '../../assets/images/icon-3.svg';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css/pagination';
 const Home = () => {
     return (
         <>
@@ -84,7 +90,7 @@ const Home = () => {
                             <div className="col-md-4">
                                 <div className="item">
                                     <div className="service-image">
-                                        <img src={ Construction2 } alt="" srcset="" />
+                                        <img src={ Construction2 } alt="" srcSet="" />
                                     </div>
                                     <div className="service-body">
                                         <div className="service-title">
@@ -100,7 +106,7 @@ const Home = () => {
                             <div className="col-md-4">
                                 <div className="item">
                                     <div className="service-image">
-                                        <img src={ Construction3 } alt="" srcset="" />
+                                        <img src={ Construction3 } alt="" srcSet="" />
                                     </div>
                                     <div className="service-body">
                                         <div className="service-title">
@@ -116,7 +122,7 @@ const Home = () => {
                             <div className="col-md-4">
                                 <div className="item">
                                     <div className="service-image">
-                                        <img src={ Construction4 } alt="" srcset="" />
+                                        <img src={ Construction4 } alt="" srcSet="" />
                                     </div>
                                     <div className="service-body">
                                         <div className="service-title">
@@ -146,7 +152,7 @@ const Home = () => {
                             <div className="col-md-4">
                                 <div className="card shadow p-4">
                                     <div className="card-icon">
-                                        <img src={ Icon1 } alt="" srcset="" />
+                                        <img src={ Icon1 } alt="" srcSet="" />
                                     </div>
                                     <div className="card-title">
                                         <h3>Expertise</h3>
@@ -158,7 +164,7 @@ const Home = () => {
                             <div className="col-md-4">
                                 <div className="card shadow p-4">
                                     <div className="card-icon">
-                                        <img src={ Icon2 } alt="" srcset="" />
+                                        <img src={ Icon2 } alt="" srcSet="" />
                                     </div>
                                     <div className="card-title">
                                         <h3>Cutting-Edge Solutions</h3>
@@ -170,7 +176,7 @@ const Home = () => {
                             <div className="col-md-4">
                                 <div className="card shadow p-4">
                                     <div className="card-icon">
-                                        <img src={ Icon3 } alt="" srcset="" />
+                                        <img src={ Icon3 } alt="" srcSet="" />
                                     </div>
                                     <div className="card-title">
                                         <h3>Cutting-Edge Solutions</h3>
@@ -194,7 +200,7 @@ const Home = () => {
                             <div className="col-md-3">
                                 <div className="item">
                                     <div className="service-image">
-                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcset="" />
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcSet="" />
                                     </div>
                                     <div className="service-body">
                                         <div className="service-title">
@@ -211,7 +217,7 @@ const Home = () => {
                             <div className="col-md-3">
                                 <div className="item">
                                     <div className="service-image">
-                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcset="" />
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcSet="" />
                                     </div>
                                     <div className="service-body">
                                         <div className="service-title">
@@ -228,7 +234,7 @@ const Home = () => {
                             <div className="col-md-3">
                                 <div className="item">
                                     <div className="service-image">
-                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcset="" />
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcSet="" />
                                     </div>
                                     <div className="service-body">
                                         <div className="service-title">
@@ -245,7 +251,7 @@ const Home = () => {
                             <div className="col-md-3">
                                 <div className="item">
                                     <div className="service-image">
-                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcset="" />
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/projects/small/17383940062.jpg" alt="" srcSet="" />
                                     </div>
                                     <div className="service-body">
                                         <div className="service-title">
@@ -270,11 +276,31 @@ const Home = () => {
                             <h2>What people are saying about us</h2>
                             <p>We take pride in our diverse portfolio, showcasing our expertise across various sectors and project types.</p>
                         </div>
-                        <div className="row">
-                            <div className="col-md-4">
+
+                        <Swiper
+                            spaceBetween={ 50 }
+                            slidesPerView={ 3 }
+                            modules={ [Pagination] }
+                            pagination={ { clickable: true } }
+                        >
+                            <SwiperSlide>
                                 <div className="card shadow">
-                                    <div class="rating">
-                                        rating
+                                    <div className="rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
                                     </div>
                                     <div className="card-body">
                                         <p className='card-text'>“Urbanedge Construction exceeded our expectations with their professionalism and attention to detail. Our project was completed on time and within budget, and the quality of work is outstanding.”</p>
@@ -282,7 +308,7 @@ const Home = () => {
                                     <hr />
                                     <div className="d-flex align-items-center justify-content-center p-3">
                                         <div className="img">
-                                            <img src="https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942924.jpg" alt="" srcset="" />
+                                            <img src="https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942924.jpg" alt="" srcSet="" />
                                         </div>
                                         <div className="ps-3">
                                             <div className="name">Shivani</div>
@@ -290,8 +316,113 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="card shadow">
+                                    <div className="rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                    </div>
+                                    <div className="card-body">
+                                        <p className='card-text'>“Urbanedge Construction exceeded our expectations with their professionalism and attention to detail. Our project was completed on time and within budget, and the quality of work is outstanding.”</p>
+                                    </div>
+                                    <hr />
+                                    <div className="d-flex align-items-center justify-content-center p-3">
+                                        <div className="img">
+                                            <img src="https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942924.jpg" alt="" srcSet="" />
+                                        </div>
+                                        <div className="ps-3">
+                                            <div className="name">Shivani</div>
+                                            <p>Project Manager, ABC Corp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="card shadow">
+                                    <div className="rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                    </div>
+                                    <div className="card-body">
+                                        <p className='card-text'>“Urbanedge Construction exceeded our expectations with their professionalism and attention to detail. Our project was completed on time and within budget, and the quality of work is outstanding.”</p>
+                                    </div>
+                                    <hr />
+                                    <div className="d-flex align-items-center justify-content-center p-3">
+                                        <div className="img">
+                                            <img src="https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942924.jpg" alt="" srcSet="" />
+                                        </div>
+                                        <div className="ps-3">
+                                            <div className="name">Shivani</div>
+                                            <p>Project Manager, ABC Corp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="card shadow">
+                                    <div className="rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-star" viewBox="0 0 16 16">
+                                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                        </svg>
+                                    </div>
+                                    <div className="card-body">
+                                        <p className='card-text'>“Urbanedge Construction exceeded our expectations with their professionalism and attention to detail. Our project was completed on time and within budget, and the quality of work is outstanding.”</p>
+                                    </div>
+                                    <hr />
+                                    <div className="d-flex align-items-center justify-content-center p-3">
+                                        <div className="img">
+                                            <img src="https://urbenedge.liveprojectlab.in/uploads/testimonials/17383942924.jpg" alt="" srcSet="" />
+                                        </div>
+                                        <div className="ps-3">
+                                            <div className="name">Shivani</div>
+                                            <p>Project Manager, ABC Corp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
 
+                    </div>
+                </div>
+                {/* blogs */ }
+                <div className="blogs">
+                    <div className="container py-5">
+                        <div className="section-header">
+                            <span>Blog & News</span>
+                            <h2>Latest news and insights</h2>
+                            <p>Stay updated with the latest trends, technologies, and insights in the construction industry.</p>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="card shadow">
+                                    <div className="card-image-top">
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/articles/small/17383946732.jpg" alt="" srcSet="" />
+                                    </div>
+                                    <div className="card-body py-4">
+                                        <h3>Innovative Construction Techniques for 2025</h3>
+                                        <p>Explore the latest advancements in construction technology and how they are shaping the future of the industry.</p>
+                                        <a href="" className='btn btn-primary'>Read More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

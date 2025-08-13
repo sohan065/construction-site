@@ -211,6 +211,9 @@ header{
 }
 
 .testimonials{
+    .swiper-pagination-bullet{
+        background-color: $primary-color;
+    }
     span{
         color: $primary-color;
         font-size: 1.2em;
@@ -242,4 +245,36 @@ header{
             font-size: 1.2em;
         }
     }
+    .rating{
+        color: #FFB703;
+    }
+}
+
+.blogs{
+    span{
+        color: $primary-color;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 3em;
+    }
+    p{
+        font-size: 1.2em;
+    } 
+    .section-header{
+        text-align: center;
+    }
+    .card{
+        border-radius: 40px;
+         overflow: hidden;
+    }
+    .card-image-top{
+        img{
+            width: 100%;
+        }
+    }
+   
 }
