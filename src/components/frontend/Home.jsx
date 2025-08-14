@@ -6,7 +6,6 @@ import AboutUs from '../../assets/images/about-us.jpg';
 import Construction2 from '../../assets/images/construction2.jpg';
 import Construction3 from '../../assets/images/construction3.jpg';
 import Construction4 from '../../assets/images/construction4.jpg';
-import Construction5 from '../../assets/images/construction5.jpg';
 import Icon1 from '../../assets/images/icon-1.svg';
 import Icon2 from '../../assets/images/icon-2.svg';
 import Icon3 from '../../assets/images/icon-3.svg';
@@ -16,6 +15,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
+import Footer from './Footer';
 const Home = () => {
     return (
         <>
@@ -423,11 +423,36 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-md-4">
+                                <div className="card shadow">
+                                    <div className="card-image-top">
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/articles/small/17383946732.jpg" alt="" srcSet="" />
+                                    </div>
+                                    <div className="card-body py-4">
+                                        <h3>Innovative Construction Techniques for 2025</h3>
+                                        <p>Explore the latest advancements in construction technology and how they are shaping the future of the industry.</p>
+                                        <a href="" className='btn btn-primary'>Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="card shadow">
+                                    <div className="card-image-top">
+                                        <img src="https://urbenedge.liveprojectlab.in/uploads/articles/small/17383946732.jpg" alt="" srcSet="" />
+                                    </div>
+                                    <div className="card-body py-4">
+                                        <h3>Innovative Construction Techniques for 2025</h3>
+                                        <p>Explore the latest advancements in construction technology and how they are shaping the future of the industry.</p>
+                                        <a href="" className='btn btn-primary'>Read More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </main>
+
+            <Footer />
         </>
     )
 }

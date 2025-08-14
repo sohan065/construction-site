@@ -278,3 +278,27 @@ header{
     }
    
 }
+
+.footer-content{
+    background-color: #222725;
+    color: white;
+    h3{
+        color: $secondary-color;
+    }
+    ul{
+        margin-left: 0;
+        padding-left: 0;
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.2em;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
